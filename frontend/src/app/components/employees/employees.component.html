@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col s5">
+      <div class="card">
+        <div class="card-content">
+          <form
+            [formGroup]="profileForm"
+            (ngSubmit)="addEmployee()"
+          >
+            <input type="hidden" formControlName="_id">
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" formControlName="name" placeholder="Enter your Name"/>
+              </div>
+              <div class="input-field col s12">
+                <input type="text" formControlName="position" placeholder="Enter your Position"/>
+              </div>
+              <div class="input-field col s12">
+                <input type="text" formControlName="office" placeholder="Enter your Office"/>
+              </div>
+              <div class="input-field col s12">
+                <input type="number" formControlName="salary" placeholder="Enter your Salary"/>
+              </div>
+              <div class="card-action">
+                  <div class="input-field col s12">
+                    <button type="button" class="btn left" (click)="resetForm()">Clean</button>
+                    <button type="submit" class="btn right" [disabled]="!profileForm.valid">Submit</button>
+                  </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s7">
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Operations</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of this.employeeService.employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.position}}</td>
+            <td>{{employee.office}}</td>
+            <td>
+              <a (click)="this.editEmployee(employee)">
+                <i class="material-icons">edit</i>
+              </a>
+              <a (click)="this.deleteEmployee(employee._id)">
+                <i class="material-icons">delete</i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
