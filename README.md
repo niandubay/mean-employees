@@ -1,4 +1,4 @@
-# MEAN Curso
+# MEAN Curso (Server-Readme)
 
 Mongodb, Express, Angular 6 y Nodejs
 
@@ -16,13 +16,13 @@ MongoDB (^4.0.6) instalado.
 
 Clonar repo https://github.com/niandubay/mean-employees
 Ejecutar npm install tanto en el server como para el frontend para instalar dependencias
-Levantar el servidor con npm run dev
-Levantar el frontend con ng serve
+Levantar el servidor con npm run dev desde /.
+Levantar el frontend con npm start desde /frontend.
 Abrir en el navegador http://localhost:4200/
 
 ### Consideraciones
 
-Básicamente el curso se divide en 2 partes (commits), la
+Básicamente el curso se divide en 2 partes, la
 primera está basada en el server utilizando node, express y mongodb.
 En la segunda nos dedicamos a crear un formulario y una lista en angular
 para realizar las acciones de listado, alta, baja y modificación.

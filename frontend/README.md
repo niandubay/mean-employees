@@ -1,27 +1,33 @@
-# Frontend
+# MEAN Curso (Server-Readme)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Mongodb, Express, Angular 6 y Nodejs
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Pequeño crud realizado con el stack MEAN.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Node (^10.5.0) y npm (^6.8.0) instalado.
+Angular y angular_cli instalados (^6.0.8).
+MongoDB (^4.0.6) instalado.
 
-## Build
+### Installing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clonar repo https://github.com/niandubay/mean-employees
+Ejecutar npm install tanto en el server como para el frontend para instalar dependencias
+Levantar el servidor con npm run dev desde /.
+Levantar el frontend con npm start desde /frontend.
+Abrir en el navegador http://localhost:4200/
 
-## Running unit tests
+### Consideraciones
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Básicamente el curso se divide en 2 partes, la
+primera está basada en el server utilizando node, express y mongodb.
+En la segunda nos dedicamos a crear un formulario y una lista en angular
+para realizar las acciones de listado, alta, baja y modificación.
 
-## Running end-to-end tests
+### URLs del curso:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1ra parte: https://www.youtube.com/watch?v=khCIunNAEHI
+2da parte: https://www.youtube.com/watch?v=ccBtSAMFjto
